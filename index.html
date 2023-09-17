@@ -15,7 +15,7 @@
   <link rel="alternate" type="application/rss+xml" title="Agrarium &raquo; Comments Feed"
     href="https://demo.artureanec.com/themes/agrarium/comments/feed/" />
   <script type="text/javascript">
-    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/demo.artureanec.com\/themes\/agrarium\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3" } };
+    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": ".\/js\/emoji.js" } };
     /*! This file is auto-generated */
     !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
   </script>
@@ -4355,10 +4355,10 @@
     type='text/css' media='all' />
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/jquery/jquery.min.js?ver=3.7.0'
+    src='./js/jquery.js'
     id='jquery-core-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1'
+    src='./js/jquery-migrate.js'
     id='jquery-migrate-js'></script>
   <link rel="https://api.w.org/" href="https://demo.artureanec.com/themes/agrarium/wp-json/" />
   <link rel="alternate" type="application/json"
@@ -5788,7 +5788,7 @@
     href='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.15.0'
     type='text/css' media='all' />
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.9.0'
+    src='./js/jquery-blockui.js'
     id='jquery-blockui-js'></script>
   <script type='text/javascript' id='wc-add-to-cart-js-extra'>
     /* <![CDATA[ */
@@ -5796,10 +5796,10 @@
 /* ]]> */
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.9.0'
+    src='./js/add-cart.js'
     id='wc-add-to-cart-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.9.0'
+    src='./js/js-cookie.js'
     id='js-cookie-js'></script>
   <script type='text/javascript' id='woocommerce-js-extra'>
     /* <![CDATA[ */
@@ -5807,19 +5807,19 @@
 /* ]]> */
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.9.0'
+    src='./js/woocommerce.js'
     id='woocommerce-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1-wc.7.9.0'
+    src='./js/jquery-cookie.js'
     id='jquery-cookie-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/themes/agrarium/js/owl.carousel.min.js?ver=6.3'
+    src='./js/owl-carousel.js'
     id='owl-carousel-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/imagesloaded.min.js?ver=4.1.4'
+    src='./js/imagesloaded.js'
     id='imagesloaded-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/agrarium-plugin/js/lib/isotope.min.js?ver=6.3'
+    src='./js/isotope.js'
     id='isotope-js'></script>
   <script type='text/javascript' id='agrarium-theme-js-extra'>
     /* <![CDATA[ */
@@ -5828,37 +5828,37 @@
 /* ]]> */
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/themes/agrarium/js/theme.js?ver=6.3'
+    src='./js/theme.js'
     id='agrarium-theme-js'></script>
   <script id="agrarium-theme-js-after" type="text/javascript">
 
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/themes/agrarium/js/woo.js?ver=6.3'
+    src='./js/woo.js'
     id='agrarium-woocommerce-scripts-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/agrarium-plugin/js/lib/slick.min.js?ver=6.3'
+    src='./js/slick.js'
     id='slick_slider-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/agrarium-plugin/js/lib/jquery.fancybox.min.js?ver=6.3'
+    src='./js/jquery-fancybox.js'
     id='fancybox-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/agrarium-plugin/js/content-slider-widget.js?ver=6.3'
+    src='./js/content-slider.js'
     id='content_slider_widget-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/agrarium-plugin/js/elementor-widgets.js?ver=6.3'
+    src='./js/elementor-widget.js'
     id='elementor_widgets-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/agrarium-plugin/js/video-button-widget.js?ver=6.3'
+    src='./js/video-widget.js'
     id='video_widget-js'></script>
   <script id="mediaelement-core-js-before" type="text/javascript">
     var mejsL10n = { "language": "en", "strings": { "mejs.download-file": "Download File", "mejs.install-flash": "You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/", "mejs.fullscreen": "Fullscreen", "mejs.play": "Play", "mejs.pause": "Pause", "mejs.time-slider": "Time Slider", "mejs.time-help-text": "Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.", "mejs.live-broadcast": "Live Broadcast", "mejs.volume-help-text": "Use Up\/Down Arrow keys to increase or decrease volume.", "mejs.unmute": "Unmute", "mejs.mute": "Mute", "mejs.volume-slider": "Volume Slider", "mejs.video-player": "Video Player", "mejs.audio-player": "Audio Player", "mejs.captions-subtitles": "Captions\/Subtitles", "mejs.captions-chapters": "Chapters", "mejs.none": "None", "mejs.afrikaans": "Afrikaans", "mejs.albanian": "Albanian", "mejs.arabic": "Arabic", "mejs.belarusian": "Belarusian", "mejs.bulgarian": "Bulgarian", "mejs.catalan": "Catalan", "mejs.chinese": "Chinese", "mejs.chinese-simplified": "Chinese (Simplified)", "mejs.chinese-traditional": "Chinese (Traditional)", "mejs.croatian": "Croatian", "mejs.czech": "Czech", "mejs.danish": "Danish", "mejs.dutch": "Dutch", "mejs.english": "English", "mejs.estonian": "Estonian", "mejs.filipino": "Filipino", "mejs.finnish": "Finnish", "mejs.french": "French", "mejs.galician": "Galician", "mejs.german": "German", "mejs.greek": "Greek", "mejs.haitian-creole": "Haitian Creole", "mejs.hebrew": "Hebrew", "mejs.hindi": "Hindi", "mejs.hungarian": "Hungarian", "mejs.icelandic": "Icelandic", "mejs.indonesian": "Indonesian", "mejs.irish": "Irish", "mejs.italian": "Italian", "mejs.japanese": "Japanese", "mejs.korean": "Korean", "mejs.latvian": "Latvian", "mejs.lithuanian": "Lithuanian", "mejs.macedonian": "Macedonian", "mejs.malay": "Malay", "mejs.maltese": "Maltese", "mejs.norwegian": "Norwegian", "mejs.persian": "Persian", "mejs.polish": "Polish", "mejs.portuguese": "Portuguese", "mejs.romanian": "Romanian", "mejs.russian": "Russian", "mejs.serbian": "Serbian", "mejs.slovak": "Slovak", "mejs.slovenian": "Slovenian", "mejs.spanish": "Spanish", "mejs.swahili": "Swahili", "mejs.swedish": "Swedish", "mejs.tagalog": "Tagalog", "mejs.thai": "Thai", "mejs.turkish": "Turkish", "mejs.ukrainian": "Ukrainian", "mejs.vietnamese": "Vietnamese", "mejs.welsh": "Welsh", "mejs.yiddish": "Yiddish" } };
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17'
+    src='./js/media-element.js'
     id='mediaelement-core-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.3'
+    src='./js/media-element-migrate.js'
     id='mediaelement-migrate-js'></script>
   <script type='text/javascript' id='mediaelement-js-extra'>
     /* <![CDATA[ */
@@ -5866,43 +5866,42 @@
 /* ]]> */
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.3'
-    id='wp-mediaelement-js'></script>
+    src='./js/wp-media-element.js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/mediaelement/renderers/vimeo.min.js?ver=4.2.17'
+    src='./js/vimeo.js'
     id='mediaelement-vimeo-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.15.0'
+    src='./js/webpack-runtime.js'
     id='elementor-webpack-runtime-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.15.0'
+    src='./js/frontend-modules.js'
     id='elementor-frontend-modules-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2'
+    src='./js/waypoint.js'
     id='elementor-waypoints-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2'
+    src='./js/core.js'
     id='jquery-ui-core-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js?ver=5.3.6'
+    src='./js/swiper.js'
     id='swiper-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js?ver=3.15.0'
+    src='./js/share-link.js'
     id='share-link-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js?ver=4.9.0'
+    src='./js/dialog.js'
     id='elementor-dialog-js'></script>
   <script id="elementor-frontend-js-before" type="text/javascript">
     var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 992, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile Portrait", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Landscape", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet Portrait", "value": 991, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1279, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 1921, "default_value": 2400, "direction": "min", "is_enabled": true } } }, "version": "3.15.0", "is_static": false, "experimentalFeatures": { "additional_custom_breakpoints": true }, "urls": { "assets": "https:\/\/demo.artureanec.com\/themes\/agrarium\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper-container", "settings": { "page": [], "editorPreferences": [] }, "kit": { "body_background_background": "classic", "active_breakpoints": ["viewport_mobile", "viewport_tablet", "viewport_laptop", "viewport_widescreen"], "viewport_laptop": 1279, "viewport_tablet": 991, "viewport_widescreen": 1921, "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 166, "title": "Organic%20Food%20%E2%80%93%20Agrarium", "excerpt": "", "featuredImage": false } };
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.15.0'
+    src='./js/frontend.js'
     id='elementor-frontend-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js?ver=3.15.0'
+    src='./js/preloaded.js'
     id='preloaded-modules-js'></script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/underscore.min.js?ver=1.13.4'
+    src='./js/underscore.js'
     id='underscore-js'></script>
   <script type='text/javascript' id='wp-util-js-extra'>
     /* <![CDATA[ */
@@ -5910,7 +5909,7 @@
 /* ]]> */
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-includes/js/wp-util.min.js?ver=6.3'
+    src='./js/wp-util.js'
     id='wp-util-js'></script>
   <script type='text/javascript' id='wpforms-elementor-js-extra'>
     /* <![CDATA[ */
@@ -5918,7 +5917,7 @@
 /* ]]> */
   </script>
   <script type='text/javascript'
-    src='https://g2h4v2c9.stackpathcdn.com/themes/agrarium/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.2.3'
+    src='./js/frontend-integration.js'
     id='wpforms-elementor-js'></script>
 </body>
 
