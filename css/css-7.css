@@ -554,6 +554,13 @@ body .owl-carousel {
 @media only screen and (min-width: 992px) {
   .owl-carousel.owl-theme .owl-nav {
     display: block; } }
+
+@media only screen and (max-width: 992px) {
+  .content-wrapper-custom {
+    margin-top: 0 !important;
+  } }
+
+    
 body.compensate-for-scrollbar {
   overflow: hidden; }
 
@@ -17412,11 +17419,16 @@ body.admin-bar .header.sticky-header-on.sticky-ready .sticky-wrapper {
   font-family: 'Herbarium';
   letter-spacing: 0;
   font-size: 50px;
-  bottom: 20px;
+  /* bottom: 20px; */
   font-weight: 400;
   line-height: 1em;
-  right: 40px;
-  white-space: nowrap; }
+  /* right: 40px; */
+  white-space: nowrap;
+  right: 0;
+  left: 0;
+  text-align: center;
+  bottom: 25%;
+}
 
 .page-title-bottom-overlay {
   position: absolute;
@@ -17428,7 +17440,7 @@ body.admin-bar .header.sticky-header-on.sticky-ready .sticky-wrapper {
   padding-top: 52px;
   background-color: #fff;
   background-clip: content-box; }
-  .page-title-bottom-overlay:before {
+  /* .page-title-bottom-overlay:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -17437,7 +17449,7 @@ body.admin-bar .header.sticky-header-on.sticky-ready .sticky-wrapper {
     top: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../img/page-title-layer.png"); }
+    background-image: url("../img/page-title-layer.png"); } */
 
 .breadcrumbs {
   font-size: 14px;
@@ -17472,7 +17484,9 @@ body.admin-bar .header.sticky-header-on.sticky-ready .sticky-wrapper {
 
   .page-title-additional {
     font-size: 1.3em;
-    bottom: 10px; } }
+    bottom: 35%;
+    /* bottom: 10px; */
+   } }
 @media only screen and (min-width: 768px) {
   .page-title-container {
     min-height: 500px; }
@@ -17494,8 +17508,10 @@ body.admin-bar .header.sticky-header-on.sticky-ready .sticky-wrapper {
     font-size: 80px; }
   .page-title-container .page-title-additional {
     font-size: 1.875em;
-    bottom: -25px;
-    right: 14.5%; } }
+    right: 0;
+    left: 0;
+    text-align: center;
+    bottom: 25%; } }
 /* ---------- Header Search ---------- */
 .search-trigger {
   width: 16px;
